@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    height: 100vh;
+    background-color:#210045;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+}
+.container{
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 10px 5px 4px 2px rgba(0, 0, 0, 0.7), 15px 10px 4px 2px rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#0B0017;
+    box-sizing: content-box;
+}
+.container-tempo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+#tempoVolta{
+    margin: 0;
+}
+.container-botao{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    color: white;
+    background-color:#2E265C;
+}
+#voltar{
+    background-color:#3F6660;
+    opacity: 0.2;
+}
