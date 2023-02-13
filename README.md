@@ -1,4 +1,4 @@
-# CalculadoraSimples
+# CRONÔMETRO
 
 Esse é um projeto para colocar em prática meus conhcimentos em Javascript da melhor forma.
 
