@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pe-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,19 +11,43 @@
     <link rel="stylesheet" href="style.css">
     <title>Cronômetro</title>
 </head>
+
 <body>
 
     <div class="container">
         <div class="container-tempo">
-            <h1 id="tempoReal">00:00:00</h1>
-            <p id="tempoVolta">00:00:00</p>            
+            <h1 id="tempoReal"><span id="min">00</span>:<span id="seg">00</span>.<span id="miliSeg">00</span></h1>
+            <div id="tempoVolta"></div>
+            <table class="tabela">
+                <tr class="thTabela">
+                    <th>Volta</th>
+                    <th>Tempo de volta</th>
+                    <th>Tempo geral</th>
+                </tr>
+               <!--  <tr class="trVolta">
+                    <td class="tdVolta">1</td>
+                    <td class="tdTempoVolta">2</td>
+                    <td class="tdTempoGeral">3</td>
+                </tr>
+                <tr class="trVolta">
+                    <td class="tdVolta">1</td>
+                    <td class="tdTempoVolta">2</td>
+                    <td class="tdTempoGeral">3</td>
+                </tr> -->
+                <tr class="trVolta">
+                    <td class="tdVolta"></td>
+                    <td class="tdTempoVolta"></td>
+                    <td class="tdTempoGeral"></td>
+                </tr>
+            </table>
         </div>
         <div class="container-botao">
             <input id="iniciar" class="btn" type="submit" value="Iniciar">
             <input id="voltar" class="btn" type="submit" value="Volta">
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>

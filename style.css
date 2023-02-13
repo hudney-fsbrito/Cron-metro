@@ -24,9 +24,25 @@ body{
     flex-direction: column;
     align-items: center;
     width: 80%;
+
 }
 #tempoVolta{
     margin: 0;
+    font-size: 20px;
+    display: none;
+}
+.tabela{
+    visibility: collapse;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 100%;
+    border-spacing: 0px;
+    position: relative;
+    
+}
+th{
+    border-bottom: 1px solid white;
 }
 .container-botao{
     display: flex;
@@ -39,7 +55,7 @@ body{
     border: none;
     border-radius: 25px 25px 25px 25px;
     color: white;
-    background-color:#2E265C;
+    background-color:rgb(46, 38, 92);
 }
 #voltar{
     background-color:#3F6660;
