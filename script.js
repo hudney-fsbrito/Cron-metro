@@ -2,9 +2,15 @@ let novaLindaDetabela = document.createElement("tr")
 let trVolta = document.getElementsByClassName('trVolta')
 let tabela = document.getElementsByClassName("tabela")[0]
 
+let tdVolta = document.getElementsByClassName('tdVolta')[0]
+let tdTempoVolta = document.getElementsByClassName('tdTempoVolta')[0]
+let tdTempoGeral = document.getElementsByClassName('tdTempoGeral')[0]
+
+
 let iniciar = document.getElementById("iniciar");
 let voltar = document.getElementById("voltar");
 let voltas = [];
+let tempoVoltas = [];
 
 let tempoReal = document.getElementById("tempoReal");
 let tempoVolta = document.getElementById("tempoVolta");
@@ -34,12 +40,15 @@ function startCronometro() {
         voltar.style.opacity = "1"
         iniciar.value = "Parar"
         timer = setInterval(iniciarContagem, 10)
+        timerVolta = setInterval(marcaVolta, 10)
+
 
     } else if (iniciar.value == "Retornar") {
         iniciar.style.backgroundColor = "#e6324b"
         iniciar.value = "Parar"
         voltar.value = "Volta"
         timer = setInterval(iniciarContagem, 10)
+        timerVolta = setInterval(marcaVolta, 10)
 
     } else if (iniciar.value == "Parar") {
         iniciar.style.backgroundColor = "rgb(46, 38, 92, 0.7)"
@@ -65,8 +74,14 @@ function startVolta() {
         zeraVolta()
         tabela.style.visibility = "collapse"
         tempoVolta.style.display = "none"
+        tdTempoGeral.innerText = ``
+        tdTempoVolta.innerText = ``
+        tdVolta.innerText = ``
 
     } else if (iniciar.value != "Iniciar") {
+        voltas.push(tempoReal.innerText)
+        tempoVoltas.push(tempoVolta.innerText)
+
         paraContagemVolta()
         zeraVolta()
         timerVolta = setInterval(marcaVolta, 10)
@@ -74,8 +89,6 @@ function startVolta() {
         tabela.style.visibility = "visible"
         listaVolta()
     }
-
-
 }
 
 function iniciarContagem() {
@@ -126,19 +139,8 @@ function marcaVolta() {
 }
 
 function listaVolta() {
-    voltas.push(tempoReal.innerText)
 
-    let tdVolta = document.getElementsByClassName('tdVolta')[0]
-    let tdTempoVolta = document.getElementsByClassName('tdTempoVolta')[0]
-    let tdTempoGeral = document.getElementsByClassName('tdTempoGeral')[0]
-
-    
-    tdTempoGeral.innerText += `00:00.00\n`
-    tdTempoVolta.innerText += `${voltas[voltas.length - 1]}\n`
+    tdTempoGeral.innerText += `${voltas[voltas.length - 1]}\n`
+    tdTempoVolta.innerText += `${tempoVoltas[tempoVoltas.length - 1]}\n`
     tdVolta.innerText += `${voltas.length}\n`
-   
-
-    
 }
-
-// let milisegundosGeral = mil

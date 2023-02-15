@@ -2,7 +2,7 @@
 
 Esse é um projeto para colocar em prática meus conhcimentos em Javascript da melhor forma.
 
-![](./assets/imagens/projetoInicial.png)
+![](./assets/imagens/cronometro.png)
 
 ## Índice
 
@@ -26,17 +26,18 @@ O usuário irá:
 - Cronometrar um determinado tempo decorrido.
 - Marcar o tempo de voltas.
 - Parar o tempo.
-- Retornar o tempo de onde parou.
+- Retomar o tempo de onde parou.
 - Restaurar o cronômetro em geral.
 
 
 ### Captura de tela
 
-![](./assets/imagens/)
+![](./assets/imagens/cronometro.gif)
 
 ### Links
 
 [Walter Nascimento](https://medium.com/walternascimentobarroso-pt/cron%C3%B4metro-em-js-9b440308090)
+[Otávio Miranda](https://www.youtube.com/watch?v=Y_VQFjzx1Cc)
 
 ## Meu processo
 
@@ -49,9 +50,13 @@ O usuário irá:
 
 ### O que eu aprendi
 
+  - A implemetação do setTimeout foi desafiadora mas a questão de buscar determinado elemento para mostrar na tela foi muito satisfatória em praticar.
+  - Poderia ter renderizado de outra forma, mas por enquanto essa foi a maneira que me veio a cabeça.
+  
 
 ### Desenvolvimento contínuo
 
+  - Talvez tenha construido com um pouco de exagero de código e variáveis. Creio que aos poucos irei desenvolvendo com melhores práticas.
 
 ## Autor
 
